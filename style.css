@@ -116,7 +116,7 @@ header {
 }
 
 .text a {
-  position: rleative;
+  position: relative;
   display: inline-block;
   font-size: 18px;
   color: #fff;
