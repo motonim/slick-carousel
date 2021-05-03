@@ -60,6 +60,11 @@ header {
   transition: all ease 0.5s;
 }
 
+.menu ul li.btn a:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
 .banner {
   position: relative;
   background-color: #4dc474;
@@ -68,9 +73,97 @@ header {
 .banner:before {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -70px;
   left: 0;
-  width: 100%;
-  height: 400px;
+  width: 110%;
+  height: 150px;
   background-color: #fff;
+  transform: rotate(-4deg);
+}
+
+.banner:after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 110%;
+  height: 150px;
+  background-color: #fff;
+  transform: rotate(-4deg);
+  opacity: 0.4;
+}
+
+.banner-top {
+  padding: 190px 0 60px 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  width: 40%;
+  color: #fff;
+}
+
+.text h1 {
+  font-size: 72px;
+  font-weight: 500;
+}
+
+.text p {
+  font-size: 18px;
+  line-height: 32px;
+  margin: 25px 0 40px;
+}
+
+.text a {
+  position: rleative;
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 64px 20px 44px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  transition: all ease 0.5s;
+}
+
+.text a:before {
+  content: '\f105';
+  font-family: fontawesome;
+  position: absolute;
+  font-weight: 700;
+  font-size: 38px;
+  top: 0;
+  right: -15px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #fff;
+  border-radius: 50px;
+  color: #4dc474;
+  text-align: center;
+  transition: all ease 0.5s;
+}
+
+.text a:hover {
+  background-color: #fff;
+  color: #4dc474;
+}
+
+.text a:hover:before {
+  right: 0;
+}
+
+.slider {
+  width: 60%;
+}
+
+.slider .slider-inner .item img {
+  width: 300px;
+}
+
+.image-group img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
 }
