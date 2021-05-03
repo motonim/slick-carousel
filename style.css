@@ -158,12 +158,29 @@ header {
   width: 60%;
 }
 
+.slider .item {
+  margin: 15px;
+}
+
 .slider .slider-inner .item img {
-  width: 300px;
+  width: 100%;
 }
 
 .image-group img {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 175px;
+  height: 175px;
+  transition: all ease 0.5s;
+  border: 0 solid #fff;
+}
+
+.image-group {
+  padding: 0 150px 180px;
+  margin-top: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-group img:hover {
+  border: 15px solid rgba(225, 225, 225, 0.5);
 }
